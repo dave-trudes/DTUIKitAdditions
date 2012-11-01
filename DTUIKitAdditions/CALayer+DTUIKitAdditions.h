@@ -23,6 +23,19 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-@interface CALayer (DTUIKitAdditions)
+typedef NS_ENUM(NSInteger, DTCALayerFlipAnimationDirection) {
+    DTCALayerFlipAnimationDirectionFromLeft,
+    DTCALayerFlipAnimationDirectionFromRight
+};
+//http://www.mentalfaculty.com/mentalfaculty/Blog/Entries/2010/9/22_FLIPPIN_OUT_AT_NSVIEW.html
+@interface CALayer (DTUIKitAdditions_FlipAnimations)
+
+- (void)flipToLayer:(CALayer *)toLayer withDirection:(DTCALayerFlipAnimationDirection)direction; //scaleFactor = 1.0f, duration = 1.0f, completion = nil
+
+- (void)flipToLayer:(CALayer *)toLayer withDirection:(DTCALayerFlipAnimationDirection)direction completion:(void (^)())completion; //scaleFactor = 1.0f, duration = 1.0f
+
+- (void)flipToLayer:(CALayer *)toLayer withDuration:(NSTimeInterval)duration direction:(DTCALayerFlipAnimationDirection)direction completion:(void (^)())completion; //scaleFactor = 1.0f
+
+- (void)flipToLayer:(CALayer *)toLayer withDuration:(NSTimeInterval)duration scaleFactor:(float)scaleFactor direction:(DTCALayerFlipAnimationDirection)direction completion:(void (^)())completion;
 
 @end
