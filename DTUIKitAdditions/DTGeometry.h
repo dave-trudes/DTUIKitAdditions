@@ -23,3 +23,6 @@
 CGRect DTRectWithPoint(CGRect rect, CGPoint origin);
 
 CGRect DTRectWithOrigin(CGRect rect, CGFloat x, CGFloat y);
+
+
+CGRect DTRectAddRectHeight(CGRect rect, CGRect addRect);

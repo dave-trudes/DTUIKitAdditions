@@ -32,3 +32,9 @@ CGRect DTRectWithOrigin(CGRect rect, CGFloat x, CGFloat y)
 {
 	return DTRectWithPoint(rect, CGPointMake(x, y));
 }
+
+CGRect DTRectAddRectHeight(CGRect rect, CGRect addRect)
+{
+	rect.size.height += addRect.size.height;
+	return rect;
+}
