@@ -20,6 +20,7 @@
 		1D611DA4164293BD003BEFD7 /* DTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D611DA2164293BD003BEFD7 /* DTViewController.xib */; };
 		1D611DAE1642948A003BEFD7 /* CALayer+DTUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D611DAD1642948A003BEFD7 /* CALayer+DTUIKitAdditions.m */; };
 		1D611DB5164295BD003BEFD7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D611DB3164295B4003BEFD7 /* QuartzCore.framework */; };
+		1D615145166BBF4000AB0667 /* DTGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D615144166BBF4000AB0667 /* DTGeometry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		1D611DAC1642948A003BEFD7 /* CALayer+DTUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+DTUIKitAdditions.h"; sourceTree = "<group>"; };
 		1D611DAD1642948A003BEFD7 /* CALayer+DTUIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+DTUIKitAdditions.m"; sourceTree = "<group>"; };
 		1D611DB3164295B4003BEFD7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1D615143166BBF4000AB0667 /* DTGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTGeometry.h; sourceTree = "<group>"; };
+		1D615144166BBF4000AB0667 /* DTGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTGeometry.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 			children = (
 				1D611DAC1642948A003BEFD7 /* CALayer+DTUIKitAdditions.h */,
 				1D611DAD1642948A003BEFD7 /* CALayer+DTUIKitAdditions.m */,
+				1D615143166BBF4000AB0667 /* DTGeometry.h */,
+				1D615144166BBF4000AB0667 /* DTGeometry.m */,
 			);
 			name = DTUIKitAdditions;
 			path = ../DTUIKitAdditions;
@@ -196,6 +201,7 @@
 				1D611D98164293BD003BEFD7 /* DTAppDelegate.m in Sources */,
 				1D611DA1164293BD003BEFD7 /* DTViewController.m in Sources */,
 				1D611DAE1642948A003BEFD7 /* CALayer+DTUIKitAdditions.m in Sources */,
+				1D615145166BBF4000AB0667 /* DTGeometry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +318,7 @@
 				1D611DA9164293BD003BEFD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
